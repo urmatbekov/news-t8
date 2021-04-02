@@ -3,6 +3,7 @@ import { Route } from 'react-router';
 import Navbar from '../components/Navbar';
 import CreatePost from '../screens/CreatePost';
 import Home from '../screens/Home';
+import Login from '../screens/Login';
 import PostDetail from '../screens/PostDetail';
 
 const App = () => {
@@ -21,6 +22,9 @@ const App = () => {
                     </Route>
                     <Route path="/post/:id" exact>
                         <PostDetail />
+                    </Route>
+                    <Route path="/login" exact>
+                        <Login />
                     </Route>
                 </div>
             </main>
